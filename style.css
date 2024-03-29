@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand","sans-serif";
+    background-image: linear-gradient(to right, #01022d, rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-image:
+        linear-gradient(to right, #01022da9 30%, #000000c3),
+        url(./photos-prj/Best-Restaurants.jpg) ;
+    background-position: center;
+    width: 90%;
+    height: 640px;
+    transition: all .4s ease;
+}
+.container:hover {
+    background-image:
+        linear-gradient(to right, #01022d98 28%, #00000044),
+        url(./photos-prj/Best-Restaurants.jpg)
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Utility Classes */
+.primary-text{
+    color: #e0ab39;
+    font-size: 45px;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    border: 1px solid #01022d;
+    background-color: #01022d;
+    letter-spacing: 1.5px;
+    transition: all .3s ease;
+}
+.btn-primary:hover{
+    transform: scale(1.0.9);
+    background-color: transparent;
+    font-size: 600;
+    color: #01022d;
+    border: solid 1px #01022d;
+}
+.btn-secondary{
+    border: 1px solid #383848;
+    background-color: #383848;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    transition: all .2s ease;
+}
+.btn-secondary:hover{
+    transform: scale(.9);
+    background-color: transparent;
+    font-size: 600;
+    color: #383848;
+    border: solid 1px #383848;
+}
+header{
+    height: 100vh;
+    
+}
+/* header =>nav */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.navbar img{
+    width: 50px;
+    margin-left: 70px;
+    border-radius: 30px;
+}
+.navbar ul{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 50px;
+    display: flex;
+}
+.navbar ul li a{
+    padding: 15px 20px;
+    transition: all .3s ease;
+}
+.navbar ul li a:hover{
+    border-bottom: solid 2px #e4b95b;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+/* header =>contant */
+header .header-contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 76%;
+}
+header *{
+    z-index: 6;
+}
+header .header-contant h1{
+    font-size: 40px ;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+header .header-contant p{
+    color: #ffffff;
+    margin: 20px 0 40px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* header End */
+/* about Start */
+.cont{
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 28px;
+}
+/* About Start */
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+#about .title{
+    text-align: center;margin-bottom: 4rem;
+}
+#about h2{
+    font-size: 40px;color: #383848;
+}
+#about .title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+.cont img{
+    width: 500px;
+}
+#about .about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+
+
