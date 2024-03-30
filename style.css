@@ -36,7 +36,7 @@ a{
 }
 /* Utility Classes */
 .primary-text{
-    color: #e0ab39;
+    color: #fdb821;
     font-size: 45px;
 }
 .btn{
@@ -135,7 +135,7 @@ header .header-contant p{
 .cont{
     max-width: 1100px;
     margin: auto;
-    margin-top: 28px;
+    margin-top: 10px;
 }
 /* About Start */
 #about{
@@ -145,17 +145,32 @@ header .header-contant p{
     align-items: center;
     background-color: #f4f4f4;
 }
-#about .title{
-    text-align: center;margin-bottom: 4rem;
+#about .title,
+#offers .title,
+#menu .title{
+    text-align: center;
+    margin-bottom: 4rem;
 }
-#about h2{
-    font-size: 40px;color: #383848;
+#about h2,
+#offers h2,
+#menu h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#about h2,
+#menu h2{
+    color: #383848;
+}
+#about .title p,
+#offers .title p,
+#menu .title p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 #about .title p{
-    font-size: 14px;
-    color: #9a9a9a;
-    font-weight: 600;
-    margin-top: 10px;
+    color: #635b5b;
 }
 #about .about-content{
     display: flex;
@@ -165,11 +180,149 @@ header .header-contant p{
     width: 500px;
 }
 #about .about-content p{
-    color: #9a9a9a;
+    color: #665555;
     margin-right: 7rem;
     font-weight: 500;
     line-height: 1.6;
 }
+/* Offer start  */
+#offers{
+    background: url("./photos-prj/offer-bg.jpg") center center/cover fixed;
+    height: 100vh;
+}
+#offers h2{
+    color: #fdb821;
+    padding-top: 40px;
+}
+#offers .title p{
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.938);
+}
+#offers .offers-items{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#offers .offers-items .item{
+    margin-top: 2rem;
+    background-color: #f9fbfc;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+#offers .offers-items .item:hover{
+    transform: scale(1.02);
+    border-radius: 30px 30px 20px 20px;
+}
+#offers .offers-items .item img{
+    height: 180px;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: solid 2px rgba(194, 193, 193, 0.637);
+}
+.item .item-content {
+    padding: 10px 15px 25px;
+}
+.item .item-content .sale{
+    background-color: #a71f1f;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item .item-content .sale p{
+    font-size: 1.1rem;
+    margin-left: 30px;
+    color: #fff;
+}
+.item .item-content .sale i{
+    font-size: 3rem;
+}
+.item .item-content .primary-text{
+    font-size: 1.8rem ;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.item .item-content h3 {
+    color: #00333a;
+    font-size: 22px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item .item-content p{
+    color: #2e1d1d;
+    font-weight: 400;
+    text-align: center;   
+}
+#menu{
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+
+}
+#menu .menu-items,
+#menu .menu-items .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu .menu-items .menu-item{
+    margin: 40px;
+}
+#menu .menu-items .menu-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#menu .menu-items .menu-item h3{
+    color: #383848;
+    border-bottom: 2px dashed #c2bdbd;
+    padding-bottom: 8px;
+    position: relative;
+}
+#menu .menu-items .menu-item span{
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu .menu-items .menu-item p{
+    max-width: 90%;
+}
+#menu .menu-items .menu-item .love{
+    position: relative;
+}
+#menu .menu-items .menu-item i{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;  
+}
+#menu .menu-items .menu-item i:hover{
+    font-size: 32px;
+    color: #a71f1f;
+}
+#menu .btn{
+    display: block;
+    margin: 20px auto 0;
+    background-color: rgba(233, 233, 37, 0.774);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+#menu .btn:hover{
+    background-color:#383848;
+    color: rgba(233, 233, 37, 0.774) ;
+    letter-spacing: 1.5px ;
+}
+
 
 
 
