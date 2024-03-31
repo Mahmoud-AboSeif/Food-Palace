@@ -169,14 +169,16 @@ header .header-contant p {
 
 #about .title,
 #offers .title,
-#menu .title {
+#menu .title,
+#gallery title {
     text-align: center;
     margin-bottom: 4rem;
 }
 
 #about h2,
 #offers h2,
-#menu h2 {
+#menu h2,
+#gallery h2 {
     text-transform: capitalize;
     font-size: 40px;
     margin-bottom: 10px;
@@ -221,7 +223,7 @@ header .header-contant p {
     height: 100vh;
 }
 
-#offers h2 {
+#offers h2{
     color: #fdb821;
     padding-top: 40px;
 }
@@ -411,4 +413,56 @@ header .header-contant p {
     font-weight: 500;
 }
 /* day time End*/
-
+/* Gallery Start */
+#gallery{
+    background: url("./photos-prj/offer photos/offer-bg.jpg") center center/cover fixed;
+    padding: 3rem 0 4rem ;
+}
+#gallery h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 10px 0;
+    color: #ffffff;
+}
+#gallery .cont .img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery .img-gallery img{
+    opacity: 0.9;
+    width: 280px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+#gallery .img-gallery img:hover{
+    opacity: 1;
+    border-radius: 40px;
+    filter: drop-shadow(2px 2px 1px rgba(184, 175, 175, 0.658) );
+    transform: scale(1.1);
+}
+/* Gallery End */
+/* Contact Us Start */
+#contact{
+    background: linear-gradient( #751b1b, #972f2f );
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-content .contact-follow{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end ;
+}
+.contact-content .contact-follow img{
+    width: 50px;
+}
+/* Contact Us End */
