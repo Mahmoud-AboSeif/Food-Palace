@@ -1,64 +1,73 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Quicksand","sans-serif";
+
+body {
+    font-family: "Quicksand", "sans-serif";
     background-image: linear-gradient(to right, #01022d, rgb(0, 0, 0));
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container {
-    background-image:
+    background:
         linear-gradient(to right, #01022da9 30%, #000000c3),
-        url(./photos-prj/Best-Restaurants.jpg) ;
+        url("./photos-prj/header-photos/ph1.jpg") center center/cover fixed no-repeat;
     background-position: center;
     width: 90%;
     height: 640px;
     transition: all .4s ease;
 }
+
 .container:hover {
-    background-image:
+    background:
         linear-gradient(to right, #01022d98 28%, #00000044),
-        url(./photos-prj/Best-Restaurants.jpg)
+        url("./photos-prj/header-photos/ph1.jpg") center center/cover fixed no-repeat;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
+
 /* Utility Classes */
-.primary-text{
+.primary-text {
     color: #fdb821;
     font-size: 45px;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 15px 30px;
     border: none;
     border-radius: 15px;
 }
-.btn-primary{
+
+.btn-primary {
     border: 1px solid #01022d;
     background-color: #01022d;
     letter-spacing: 1.5px;
     transition: all .3s ease;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     transform: scale(1.0.9);
     background-color: transparent;
     font-size: 600;
     color: #01022d;
     border: solid 1px #01022d;
 }
-.btn-secondary{
+
+.btn-secondary {
     border: 1px solid #383848;
     background-color: #383848;
     margin-top: 2rem;
@@ -66,63 +75,74 @@ a{
     letter-spacing: 1.3px;
     transition: all .2s ease;
 }
-.btn-secondary:hover{
+
+.btn-secondary:hover {
     transform: scale(.9);
     background-color: transparent;
     font-size: 600;
     color: #383848;
     border: solid 1px #383848;
 }
-header{
+
+header {
     height: 100vh;
-    
+
 }
+
 /* header =>nav */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
 }
-.navbar img{
+
+.navbar img {
     width: 50px;
     margin-left: 70px;
     border-radius: 30px;
 }
-.navbar ul{
+
+.navbar ul {
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: 600;
     margin-right: 50px;
     display: flex;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     padding: 15px 20px;
     transition: all .3s ease;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     border-bottom: solid 2px #e4b95b;
     padding-bottom: 2px;
     font-size: 15px;
 }
+
 /* header =>contant */
-header .header-contant{
+header .header-contant {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 76%;
 }
-header *{
+
+header * {
     z-index: 6;
 }
-header .header-contant h1{
-    font-size: 40px ;
+
+header .header-contant h1 {
+    font-size: 40px;
     color: #ffffff;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-header .header-contant p{
+
+header .header-contant p {
     color: #ffffff;
     margin: 20px 0 40px;
     font-size: 17px;
@@ -132,119 +152,141 @@ header .header-contant p{
 
 /* header End */
 /* about Start */
-.cont{
+.cont {
     max-width: 1100px;
     margin: auto;
     margin-top: 10px;
 }
+
 /* About Start */
-#about{
+#about {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f4f4f4;
 }
+
 #about .title,
 #offers .title,
-#menu .title{
+#menu .title {
     text-align: center;
     margin-bottom: 4rem;
 }
+
 #about h2,
 #offers h2,
-#menu h2{
+#menu h2 {
     text-transform: capitalize;
     font-size: 40px;
     margin-bottom: 10px;
 }
+
 #about h2,
-#menu h2{
+#menu h2 {
     color: #383848;
 }
+
 #about .title p,
 #offers .title p,
-#menu .title p{
+#menu .title p {
     font-size: 14px;
     font-weight: 500;
     margin-top: 10px;
 }
-#about .title p{
+
+#about .title p {
     color: #635b5b;
 }
-#about .about-content{
+
+#about .about-content {
     display: flex;
     justify-content: space-between;
 }
-.cont img{
+
+.cont img {
     width: 500px;
 }
-#about .about-content p{
+
+#about .about-content p {
     color: #665555;
     margin-right: 7rem;
     font-weight: 500;
     line-height: 1.6;
 }
+
 /* Offer start  */
-#offers{
-    background: url("./photos-prj/offer-bg.jpg") center center/cover fixed;
+#offers {
+    background: url("./photos-prj/offer photos/offer-bg.jpg") center center/cover fixed;
     height: 100vh;
 }
-#offers h2{
+
+#offers h2 {
     color: #fdb821;
     padding-top: 40px;
 }
-#offers .title p{
+
+#offers .title p {
     margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.938);
 }
-#offers .offers-items{
+
+#offers .offers-items {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-#offers .offers-items .item{
+
+#offers .offers-items .item {
     margin-top: 2rem;
     background-color: #f9fbfc;
     border-radius: 5px;
     transition: all 0.2s ease;
 }
-#offers .offers-items .item:hover{
+
+#offers .offers-items .item:hover {
     transform: scale(1.02);
     border-radius: 30px 30px 20px 20px;
 }
-#offers .offers-items .item img{
+
+#offers .offers-items .item img {
     height: 180px;
     overflow: hidden;
     max-width: 100%;
     border-radius: 30px 30px 0px 0px;
     border-bottom: solid 2px rgba(194, 193, 193, 0.637);
 }
+
 .item .item-content {
     padding: 10px 15px 25px;
 }
-.item .item-content .sale{
+
+.item .item-content .sale {
     background-color: #a71f1f;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.item .item-content .sale p{
+
+.item .item-content .sale p {
     font-size: 1.1rem;
     margin-left: 30px;
     color: #fff;
 }
-.item .item-content .sale i{
+
+.item .item-content .sale i {
     font-size: 3rem;
 }
-.item .item-content .primary-text{
-    font-size: 1.8rem ;
+
+.item .item-content .primary-text {
+    font-size: 1.8rem;
     font-weight: 800;
     margin-left: 10px;
 }
+
 .item .item-content h3 {
     color: #00333a;
     font-size: 22px;
@@ -255,59 +297,71 @@ header .header-contant p{
     justify-content: center;
     align-items: center;
 }
-.item .item-content p{
+
+.item .item-content p {
     color: #2e1d1d;
     font-weight: 400;
-    text-align: center;   
+    text-align: center;
 }
-#menu{
+
+#menu {
     background-color: #f4f4f4;
     padding: 5rem 0;
 
 }
+
 #menu .menu-items,
 #menu .menu-items .menu-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#menu .menu-items .menu-item{
+
+#menu .menu-items .menu-item {
     margin: 40px;
 }
+
 #menu .menu-items .menu-item img {
     width: 80px;
     border-radius: 50%;
     margin-right: 20px;
 }
-#menu .menu-items .menu-item h3{
+
+#menu .menu-items .menu-item h3 {
     color: #383848;
     border-bottom: 2px dashed #c2bdbd;
     padding-bottom: 8px;
     position: relative;
 }
-#menu .menu-items .menu-item span{
+
+#menu .menu-items .menu-item span {
     font-size: 18px;
     position: absolute;
     top: 0;
     right: 0;
 }
-#menu .menu-items .menu-item p{
+
+#menu .menu-items .menu-item p {
     max-width: 90%;
 }
-#menu .menu-items .menu-item .love{
+
+#menu .menu-items .menu-item .love {
     position: relative;
 }
-#menu .menu-items .menu-item i{
+
+#menu .menu-items .menu-item i {
     font-size: 30px;
     position: absolute;
     bottom: 0;
-    right: 0;  
+    right: 0;
 }
-#menu .menu-items .menu-item i:hover{
+
+#menu .menu-items .menu-item i:hover {
     font-size: 32px;
     color: #a71f1f;
 }
-#menu .btn{
+
+#menu .btn {
     display: block;
     margin: 20px auto 0;
     background-color: rgba(233, 233, 37, 0.774);
@@ -317,13 +371,9 @@ header .header-contant p{
     font-weight: 400;
     transition: all .3s ease;
 }
-#menu .btn:hover{
-    background-color:#383848;
-    color: rgba(233, 233, 37, 0.774) ;
-    letter-spacing: 1.5px ;
+
+#menu .btn:hover {
+    background-color: #383848;
+    color: rgba(233, 233, 37, 0.774);
+    letter-spacing: 1.5px;
 }
-
-
-
-
-
