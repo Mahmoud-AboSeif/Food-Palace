@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Quicksand", "sans-serif";
     background-image: linear-gradient(to right, #01022d, rgb(0, 0, 0));
@@ -151,14 +155,14 @@ header .header-contant p {
 }
 
 /* header End */
-/* about Start */
+/* About Start */
 .cont {
     max-width: 1100px;
     margin: auto;
     margin-top: 10px;
 }
 
-/* About Start */
+
 #about {
     height: 80vh;
     display: flex;
@@ -223,7 +227,7 @@ header .header-contant p {
     height: 100vh;
 }
 
-#offers h2{
+#offers h2 {
     color: #fdb821;
     padding-top: 40px;
 }
@@ -250,7 +254,7 @@ header .header-contant p {
 
 #offers .offers-items .item:hover {
     transform: scale(1.02);
-    border-radius: 30px 30px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
 }
 
 #offers .offers-items .item img {
@@ -366,7 +370,7 @@ header .header-contant p {
 #menu .btn {
     display: block;
     margin: 20px auto 0;
-    background-color: rgba(233, 233, 37, 0.774);
+    background-color: #c5c519;
     color: #fff;
     cursor: pointer;
     letter-spacing: 1px;
@@ -379,101 +383,119 @@ header .header-contant p {
     color: rgba(233, 233, 37, 0.774);
     letter-spacing: 1.5px;
 }
+
 /* Menu End */
 /* day time Start */
-#day-time{
-    background: url("./photos-prj/Day-time-photos/daytime_bg.jpeg")center center/cover fixed no-repeat ;
+#day-time {
+    background: url("./photos-prj/Day-time-photos/daytime_bg.jpeg")center center/cover fixed no-repeat;
     text-align: center;
 }
-#day-time .dayTime-items{
+
+#day-time .dayTime-items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 45vh;
 }
-#day-time .dayTime-items img{
+
+#day-time .dayTime-items img {
     width: 80px;
-    
+
 }
-#day-time .dayTime-items .size{
+
+#day-time .dayTime-items .size {
     width: 100px;
     margin: 3px 0 8px 0;
 }
-#day-time .dayTime-items .siz{
+
+#day-time .dayTime-items .siz {
     width: 67px;
 }
-#day-time .dayTime-items h3{
+
+#day-time .dayTime-items h3 {
     font-size: 30px;
     margin: 15px 0 10px 0;
     color: #fff;
     font-weight: 700;
 }
-#day-time .dayTime-items p{
+
+#day-time .dayTime-items p {
     color: #fff;
     font-weight: 500;
 }
+
 /* day time End*/
 /* Gallery Start */
-#gallery{
+#gallery {
     background: url("./photos-prj/offer photos/offer-bg.jpg") center center/cover fixed;
-    padding: 3rem 0 4rem ;
+    padding: 3rem 0 4rem;
 }
-#gallery h2
-{
+
+#gallery h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0 10px 0;
     color: #ffffff;
 }
-#gallery .cont .img-gallery{
+
+#gallery .cont .img-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-#gallery .img-gallery img{
+
+#gallery .img-gallery img {
     opacity: 0.9;
-    width: 280px;
-    height: 200px;
+    width: 270px;
+    height: 190px;
     margin: 20px;
     border-radius: 50%;
     transition: all .2s ease;
 }
-#gallery .img-gallery img:hover{
+
+#gallery .img-gallery img:hover {
     opacity: 1;
     border-radius: 40px;
-    filter: drop-shadow(2px 2px 1px rgba(184, 175, 175, 0.658) );
+    filter: drop-shadow(2px 2px 1px rgba(184, 175, 175, 0.658));
     transform: scale(1.1);
 }
+
 /* Gallery End */
 /* Contact Us Start */
-#contact{
+#contact {
     padding: 2em 0;
-    background: linear-gradient( #751b1b, #972f2f );
+    background: linear-gradient(#6e1818, #922727);
 }
-#contact .contact-content{
+
+#contact .contact-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#contact .contact-content h3{
-    font-size: 18px ;
+
+#contact .contact-content h3 {
+    font-size: 18px;
     color: #fff;
     margin-bottom: 15px;
 }
-.contact-content .contact-follow{
+
+.contact-content .contact-follow {
     width: 37%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center ;
+    align-items: center;
 }
-.contact-content .contact-follow img{
+
+.contact-content .contact-follow img {
     width: 50px;
+    border-radius: 50%;
     margin-right: 20px;
     margin-bottom: 25px;
 }
-.contact-content .contact-follow a i{
+
+.contact-content .contact-follow a i {
     font-size: 28px;
     color: #fff;
     background-color: #fdb821;
@@ -483,46 +505,60 @@ header .header-contant p {
     border-radius: 50%;
     transition: all .2s ease;
 }
-.contact-content .contact-follow a i:hover{
+
+.contact-content .contact-follow a i:hover {
     transform: scale(1.1);
-    color: #fdb821 ;
+    color: #fdb821;
     background-color: #fff;
 
 }
-.contact-content .contact-info div{
+
+.contact-content .contact-info div {
     margin: 10px 0;
     line-height: 1.5;
 }
-.contact-content .contact-info{
+
+.contact-content .contact-info {
     width: 30%;
 }
-.contact-content .contact-info p{
+
+.contact-content .contact-info p {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.1px;
 }
-.contact-content .contact-info i{
+
+.contact-content .contact-info i {
     color: #fdb821;
     margin-right: 5px;
 }
-form{
+
+form {
     width: 33%;
 }
-form .item input{
+
+form .item {
+    display: flex;
+    align-items: center;
+}
+
+form .item input {
     width: 60%;
     padding: 10px 7px;
-    margin: 18px 0 ;
+    margin: 18px 0;
     border: none;
     background-color: #f4f4f4;
     border-radius: 15px 0 0 15px;
     transition: all .2s ease;
 }
-form input:hover{
+
+form input:hover {
     background-color: #e4dada;
 }
-.item .btn-primary{
-    padding: 8px 20px 10px 20px;
+
+.item .btn-primary {
+    padding: 7px 20px 10px 20px;
     font-size: 16px;
     color: #f6f6fc;
     background-color: #7f81c0;
@@ -530,8 +566,20 @@ form input:hover{
     border-radius: 0 20px 20px 0;
     transition: all .2s ease;
 }
-.item .btn-primary:hover{
+
+.item .btn-primary:hover {
     color: #7f81c0;
     background-color: #f6f6fc;
 }
+
 /* Contact Us End */
+/* Footer Start */
+#footer {
+    background-color: #383848;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+/* Footer End */
