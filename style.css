@@ -449,6 +449,7 @@ header .header-contant p {
 /* Gallery End */
 /* Contact Us Start */
 #contact{
+    padding: 2em 0;
     background: linear-gradient( #751b1b, #972f2f );
 }
 #contact .contact-content{
@@ -456,13 +457,81 @@ header .header-contant p {
     justify-content: space-evenly;
     align-items: center;
 }
+#contact .contact-content h3{
+    font-size: 18px ;
+    color: #fff;
+    margin-bottom: 15px;
+}
 .contact-content .contact-follow{
-    width: 30%;
+    width: 37%;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-end ;
+    align-items: center ;
 }
 .contact-content .contact-follow img{
     width: 50px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.contact-content .contact-follow a i{
+    font-size: 28px;
+    color: #fff;
+    background-color: #fdb821;
+    padding: 8px;
+    margin-right: 5px;
+    margin-top: 19px;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+.contact-content .contact-follow a i:hover{
+    transform: scale(1.1);
+    color: #fdb821 ;
+    background-color: #fff;
+
+}
+.contact-content .contact-info div{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.contact-content .contact-info{
+    width: 30%;
+}
+.contact-content .contact-info p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+}
+.contact-content .contact-info i{
+    color: #fdb821;
+    margin-right: 5px;
+}
+form{
+    width: 33%;
+}
+form .item input{
+    width: 60%;
+    padding: 10px 7px;
+    margin: 18px 0 ;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 15px 0 0 15px;
+    transition: all .2s ease;
+}
+form input:hover{
+    background-color: #e4dada;
+}
+.item .btn-primary{
+    padding: 8px 20px 10px 20px;
+    font-size: 16px;
+    color: #f6f6fc;
+    background-color: #7f81c0;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    transition: all .2s ease;
+}
+.item .btn-primary:hover{
+    color: #7f81c0;
+    background-color: #f6f6fc;
 }
 /* Contact Us End */
