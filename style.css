@@ -159,7 +159,7 @@ header .header-contant p {
 .cont {
     max-width: 1100px;
     margin: auto;
-    margin-top: 10px;
+
 }
 
 
@@ -207,7 +207,7 @@ header .header-contant p {
 
 #about .about-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .cont img {
@@ -224,7 +224,7 @@ header .header-contant p {
 /* Offer start  */
 #offers {
     background: url("./photos-prj/offer photos/offer-bg.jpg") center center/cover fixed;
-    height: 100vh;
+    max-width: 1400px;
 }
 
 #offers h2 {
@@ -239,14 +239,16 @@ header .header-contant p {
 
 #offers .offers-items {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
 #offers .offers-items .item {
-    margin-top: 2rem;
+    max-width: 280px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     background-color: #f9fbfc;
     border-radius: 5px;
     transition: all 0.2s ease;
@@ -254,19 +256,18 @@ header .header-contant p {
 
 #offers .offers-items .item:hover {
     transform: scale(1.02);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 30px;
 }
 
 #offers .offers-items .item img {
-    height: 180px;
-    overflow: hidden;
+    height: 150px;
     max-width: 100%;
     border-radius: 30px 30px 0px 0px;
-    border-bottom: solid 2px rgba(194, 193, 193, 0.637);
+    border-bottom: solid 2px #c2c1c1a2;
 }
 
 .item .item-content {
-    padding: 10px 15px 25px;
+    padding: 7px 13px 23px;
 }
 
 .item .item-content .sale {
@@ -284,11 +285,11 @@ header .header-contant p {
 }
 
 .item .item-content .sale i {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .item .item-content .primary-text {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 800;
     margin-left: 10px;
 }
@@ -583,3 +584,5 @@ form input:hover {
 }
 
 /* Footer End */
+
+@media(max-width:992px){}
