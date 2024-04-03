@@ -23,8 +23,7 @@ body {
         linear-gradient(to right, #01022da9 30%, #000000c3),
         url("./photos-prj/header-photos/ph1.jpg") center center/cover fixed no-repeat;
     background-position: center;
-    width: 90%;
-    height: 640px;
+    width: 95%;
     transition: all .4s ease;
 }
 
@@ -208,6 +207,7 @@ header .header-contant p {
 #about .about-content {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .cont img {
@@ -234,7 +234,7 @@ header .header-contant p {
 
 #offers .title p {
     margin-bottom: 5px;
-    color: rgba(255, 255, 255, 0.938);
+    color: #ffffffef;
 }
 
 #offers .offers-items {
@@ -585,4 +585,87 @@ form input:hover {
 
 /* Footer End */
 
-@media(max-width:992px){}
+@media (max-width: 1200px) {
+    #about .about-content p {
+        padding-left: 30px;
+    }
+
+    .btn-secondary {
+        margin-left: 30px;
+    }
+
+    #offers .offers-items .item {
+
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .item .item-content h3 {
+        color: #00333a;
+        font-size: 18px;
+    }
+    .item .item-content .primary-text {
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+    .item .item-content .sale p {
+        font-size: 1.1rem;
+        margin-left: 19px;
+    }
+
+}
+@media (max-width: 992px){
+    header .header-contant h1 {
+        font-size: 36px;
+    }
+    .primary-text {
+        color: #fdb821;
+        font-size: 41px;
+    }
+
+    .cont img {
+        width: 400px;
+    }
+    #about .about-content p {
+        color: #665555;
+        margin-right: 4rem;
+        line-height: 1.4;
+        max-width: 95%;
+    }
+    #offers .offers-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+
+    }
+    #offers .offers-items .item {
+
+        margin-left: 17.5%;
+        max-width: 300px;
+    }
+    #menu .menu-items .menu-item p {
+        max-width: 87%;
+    }
+    #menu .menu-items .menu-item {
+        margin: 35px;
+    }
+    
+    #menu .menu-items .menu-item img {
+        width: 75px;
+    }
+    
+    #menu .menu-items .menu-item h3 {
+        font-size: 16px;
+    }
+    
+    #menu .menu-items .menu-item span {
+        font-size: 17px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #contact {
+        padding: .5rem 0;
+        background: linear-gradient(#6e1818, #922727);
+    }
+    
+}
