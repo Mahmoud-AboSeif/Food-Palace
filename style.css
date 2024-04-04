@@ -310,11 +310,12 @@ header .header-contant p {
     font-weight: 400;
     text-align: center;
 }
+/* Menu Start */
 
 #menu {
     background-color: #f4f4f4;
     padding: 5rem 0;
-
+    
 }
 
 #menu .menu-items,
@@ -421,7 +422,7 @@ header .header-contant p {
 }
 
 #day-time .dayTime-items p {
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -584,7 +585,7 @@ form input:hover {
 }
 
 /* Footer End */
-
+/* media X-Large devices  */
 @media (max-width: 1199.98px) {
     #about .about-content p {
         padding-left: 30px;
@@ -619,6 +620,7 @@ form input:hover {
     }
 
 }
+/* media Large devices */
 @media (max-width: 991.98px){
     header .header-contant h1 {
         font-size: 36px;
@@ -643,6 +645,9 @@ form input:hover {
         gap: 0;
 
     }
+    #offers .offers-items .item img {
+        height: 200px;
+    }
     #offers .offers-items .item {
 
         margin-left: 17.5%;
@@ -661,6 +666,40 @@ form input:hover {
         padding: .5rem 0;
 
     }
+    .contact-content .contact-follow {
+        width: 32%;
+    }
+    
+    .contact-content .contact-follow img {
+        margin-right: 17px;
+    }
+    
+    .contact-content .contact-follow a i {
+        font-size: 26px;
+        padding: 7px;
+    }
+    .contact-content .contact-info div {
+        margin: 8px 0;
+        line-height: 1.4;
+    }
+    
+    .contact-content .contact-info {
+        width: 35%;
+    }
+    
+    .contact-content .contact-info p {
+        letter-spacing: 1px;
+    }
+    
+    .contact-content .contact-info i {
+        color: #fdb821;
+        margin-right: 5px;
+    }
+    
+    form {
+        width: 33%;
+        padding-left: 10px;
+    }
 
 }
 @media (max-width: 895px) {
@@ -669,6 +708,85 @@ form input:hover {
         flex-wrap: wrap;
     }
 }
+/* media tablet Medium devices*/
 @media (max-width: 767.98px) {
-        
+    header {
+        height: 80vh;
+    
+    }
+    .navbar img {
+        margin-left: 30px;
+    }
+    .navbar ul {
+        font-size: .9rem;
+        margin-left: 90px;
+    }
+    .navbar ul li a {
+        padding: 15px 15px;
+    }
+    header .header-contant h1 {
+        font-size: 25px;
+    }
+    .primary-text {
+        color: #fdb821;
+        font-size: 31px;
+    }
+    header .header-contant p {
+        font-size: 15px;
+        letter-spacing: .5px;
+        font-weight: 400;
+    }
+    #about {
+        height: 60vh;
+    }
+        #about h2,
+    #offers h2,
+    #menu h2,
+    #gallery h2 {
+        font-size: 30px;
+    }
+    #about h2{
+        padding-top: 16px;
+    }
+        #about .title p,
+    #offers .title p,
+    #menu .title p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .cont img {
+        width: 300px;
+    }
+    #about .about-content p {
+        color: #665555;
+        margin-right: 2rem;
+        line-height: 1.1;
+        max-width: 97%;
+    }
+    #day-time .dayTime-items {
+        height: 25vh;
+    }
+    #day-time .dayTime-items img {
+        width: 70px;
+    
+    }
+    
+    #day-time .dayTime-items .size {
+        width: 90px;
+        margin: 3px 0 2px 0;
+    }
+    
+    #day-time .dayTime-items .siz {
+        width: 57px;
+    }
+    
+    #day-time .dayTime-items h3 {
+        font-size: 24px;
+        margin: 15px 0 15px 0;
+    }
+    
+    #day-time .dayTime-items p {
+        color: #ffffff;
+        font-weight: 300;
+    }
 }
