@@ -585,7 +585,7 @@ form input:hover {
 
 /* Footer End */
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     #about .about-content p {
         padding-left: 30px;
     }
@@ -611,9 +611,15 @@ form input:hover {
         font-size: 1.1rem;
         margin-left: 19px;
     }
+    #menu .menu-items .menu-item {
+        margin: 35px;
+    }
+    #menu .menu-items .menu-item h3 {
+        font-size: 18px;
+    }
 
 }
-@media (max-width: 992px){
+@media (max-width: 991.98px){
     header .header-contant h1 {
         font-size: 36px;
     }
@@ -643,29 +649,26 @@ form input:hover {
         max-width: 300px;
     }
     #menu .menu-items .menu-item p {
-        max-width: 87%;
+        max-width: 85%;
     }
     #menu .menu-items .menu-item {
-        margin: 35px;
+        margin: 32px;
     }
-    
-    #menu .menu-items .menu-item img {
-        width: 75px;
-    }
-    
     #menu .menu-items .menu-item h3 {
-        font-size: 16px;
-    }
-    
-    #menu .menu-items .menu-item span {
-        font-size: 17px;
-        position: absolute;
-        top: 0;
-        right: 0;
+        font-size: 18px;
     }
     #contact {
         padding: .5rem 0;
-        background: linear-gradient(#6e1818, #922727);
+
     }
-    
+
+}
+@media (max-width: 895px) {
+    #menu .menu-items,
+    #menu .menu-items .menu-item {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767.98px) {
+        
 }
