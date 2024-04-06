@@ -310,12 +310,13 @@ header .header-contant p {
     font-weight: 400;
     text-align: center;
 }
+
 /* Menu Start */
 
 #menu {
     background-color: #f4f4f4;
     padding: 5rem 0;
-    
+
 }
 
 #menu .menu-items,
@@ -600,31 +601,38 @@ form input:hover {
         margin-left: 25px;
         margin-right: 25px;
     }
+
     .item .item-content h3 {
         color: #00333a;
         font-size: 18px;
     }
+
     .item .item-content .primary-text {
         font-size: 1.6rem;
         font-weight: 800;
     }
+
     .item .item-content .sale p {
         font-size: 1.1rem;
         margin-left: 19px;
     }
+
     #menu .menu-items .menu-item {
         margin: 35px;
     }
+
     #menu .menu-items .menu-item h3 {
         font-size: 18px;
     }
 
 }
+
 /* media Large devices */
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
     header .header-contant h1 {
         font-size: 36px;
     }
+
     .primary-text {
         color: #fdb821;
         font-size: 41px;
@@ -633,160 +641,470 @@ form input:hover {
     .cont img {
         width: 400px;
     }
+
     #about .about-content p {
         color: #665555;
         margin-right: 4rem;
         line-height: 1.4;
         max-width: 95%;
     }
+
     #offers .offers-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0;
 
     }
+
     #offers .offers-items .item img {
         height: 200px;
     }
+
     #offers .offers-items .item {
 
         margin-left: 17.5%;
         max-width: 300px;
     }
+
     #menu .menu-items .menu-item p {
         max-width: 85%;
     }
+
     #menu .menu-items .menu-item {
         margin: 32px;
     }
+
     #menu .menu-items .menu-item h3 {
         font-size: 18px;
     }
+
     #contact {
         padding: .5rem 0;
 
     }
+
     .contact-content .contact-follow {
         width: 32%;
     }
-    
+
     .contact-content .contact-follow img {
         margin-right: 17px;
     }
-    
+
     .contact-content .contact-follow a i {
         font-size: 26px;
         padding: 7px;
     }
+
     .contact-content .contact-info div {
         margin: 8px 0;
         line-height: 1.4;
     }
-    
+
     .contact-content .contact-info {
         width: 35%;
     }
-    
+
     .contact-content .contact-info p {
         letter-spacing: 1px;
     }
-    
+
     .contact-content .contact-info i {
-        color: #fdb821;
+
         margin-right: 5px;
     }
-    
+
     form {
         width: 33%;
         padding-left: 10px;
     }
 
 }
+
 @media (max-width: 895px) {
+
     #menu .menu-items,
     #menu .menu-items .menu-item {
         flex-wrap: wrap;
     }
 }
+
 /* media tablet Medium devices*/
 @media (max-width: 767.98px) {
     header {
         height: 80vh;
-    
+
     }
+
     .navbar img {
         margin-left: 30px;
     }
+
     .navbar ul {
         font-size: .9rem;
         margin-left: 90px;
     }
+
     .navbar ul li a {
         padding: 15px 15px;
     }
+
     header .header-contant h1 {
         font-size: 25px;
     }
+
     .primary-text {
-        color: #fdb821;
+
         font-size: 31px;
     }
+
     header .header-contant p {
         font-size: 15px;
         letter-spacing: .5px;
         font-weight: 400;
     }
+
     #about {
         height: 60vh;
     }
-        #about h2,
+
+    #about h2,
     #offers h2,
     #menu h2,
     #gallery h2 {
         font-size: 30px;
     }
-    #about h2{
+
+    #about h2 {
         padding-top: 16px;
     }
-        #about .title p,
+
+    #about .title p,
     #offers .title p,
     #menu .title p {
         font-size: 13px;
         font-weight: 400;
     }
+
     .cont img {
-        width: 300px;
+        width: 250px;
     }
+
     #about .about-content p {
         color: #665555;
         margin-right: 2rem;
-        line-height: 1.1;
+        line-height: 1;
         max-width: 97%;
     }
+
     #day-time .dayTime-items {
         height: 25vh;
     }
+
     #day-time .dayTime-items img {
         width: 70px;
-    
+
     }
-    
+
     #day-time .dayTime-items .size {
         width: 90px;
         margin: 3px 0 2px 0;
     }
-    
+
     #day-time .dayTime-items .siz {
         width: 57px;
     }
-    
+
     #day-time .dayTime-items h3 {
         font-size: 24px;
         margin: 15px 0 15px 0;
     }
-    
+
     #day-time .dayTime-items p {
-        color: #ffffff;
+
         font-weight: 300;
+    }
+
+    #gallery .img-gallery img {
+        width: 220px;
+        height: 140px;
+        margin: 15px;
+    }
+
+    #contact {
+        padding: .3rem 0;
+
+    }
+
+    .contact-content .contact-follow {
+        width: 30%;
+    }
+
+    .contact-content .contact-follow img {
+        margin-right: 15px;
+        width: 35px;
+    }
+
+    .contact-content .contact-follow a i {
+        font-size: 13px;
+        padding: 7x;
+        margin-right: 2px;
+        margin-top: 11px;
+    }
+
+    .contact-content .contact-info div {
+        margin: 8px 0;
+        line-height: 1.1;
+    }
+
+    .contact-content .contact-info {
+        width: 37%;
+    }
+
+    .contact-content .contact-info p {
+        letter-spacing: .7px;
+    }
+
+    .contact-content .contact-info i {
+        margin-right: 2px;
+    }
+
+    form {
+        width: 33%;
+        padding-left: 10px;
+    }
+
+    form .item input {
+        width: 40%;
+        padding: 6px 7px;
+    }
+
+    .item .btn-primary {
+        padding: 7px 13px 10px 14px;
+        font-size: 9px;
+        color: #f6f6fc;
+        background-color: #7f81c0;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        transition: all .2s ease;
+    }
+
+    #footer {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar {
+        display: block;
+        padding: 25px 0;
+    }
+
+    .navbar img {
+        width: 40px;
+        margin-left: 42%;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        padding: 15px 12px;
+    }
+
+    .navbar ul {
+        font-size: .8rem;
+        font-weight: 600;
+        display: flex;
+        margin-right: 85px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    header .header-contant h1 {
+        font-size: 15px;
+    }
+
+    .primary-text {
+        font-size: 16px;
+    }
+
+    header .header-contant p {
+        font-size: 11px;
+        letter-spacing: .2px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+
+    #about {
+        height: 95vh;
+    }
+
+    #about h2,
+    #offers h2,
+    #menu h2,
+    #gallery h2 {
+        font-size: 20px;
+    }
+
+    #about .title p,
+    #offers .title p,
+    #menu .title p {
+        font-size: 10px;
+    }
+
+    .cont .about-content img {
+        width: 150px;
+    }
+
+    #about .about-content p {
+
+        margin-right: 1rem;
+        line-height: 1;
+        max-width: 100%;
+    }
+
+    .btn-secondary {
+        margin-top: 1rem;
+        letter-spacing: .8px;
+        padding: 8PX 15PX;
+        font-size: 14px;
+    }
+
+    #offers h2 {
+        font-size: 24px;
+    }
+
+    #offers .offers-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.3rem;
+    }
+
+    #offers .offers-items .item {
+        max-width: 220px;
+        margin-top: 2rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    #menu {
+        background-color: #f4f4f4;
+        padding: 3rem 0;
+
+    }
+
+    #menu .menu-items,
+    #menu .menu-items .menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu .menu-items .menu-item {
+        margin: 20px;
+    }
+
+    #menu .menu-items .menu-item img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    #day-time .dayTime-items img {
+        width: 40px;
+
+    }
+
+    #day-time .dayTime-items .size {
+        width: 50px;
+        margin: 9px 0 0 0;
+    }
+
+    #day-time .dayTime-items .siz {
+        width: 34px;
+    }
+
+    #day-time .dayTime-items .si {
+        margin-bottom: 8px;
+        padding-right: 5px;
+    }
+
+    #day-time .dayTime-items h3 {
+        font-size: 15px;
+        margin: 15px 0 10px 0;
+    }
+
+    #day-time .dayTime-items p {
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    #gallery {
+        padding: 1rem 0 2rem 0;
+    }
+
+    #gallery h2 {
+        padding: 20px 0 10px 0;
+        font-size: 27px;
+    }
+
+    #gallery .img-gallery img {
+        width: 180px;
+        height: 120px;
+        margin: 12px;
+    }
+
+    #contact {
+        padding: .2rem 0;
+
+    }
+
+    .contact-content .contact-follow {
+        width: 20%;
+    }
+
+    #contact .contact-content h3 {
+        font-size: 13px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .contact-content .contact-follow img {
+        margin-right: 0;
+        width: 0;
+    }
+
+    .contact-content .contact-follow a i {
+        display: block;
+        max-width: 45%;
+        font-size: 15px;
+        padding: 6x;
+        margin: 16px 0 0 25%;
+    }
+
+    .contact-content .contact-info div {
+        line-height: 1;
+    }
+
+    .contact-content .contact-info {
+        width: 47%;
+    }
+
+    .contact-content .contact-info p {
+        letter-spacing: .7px;
+        font-size: 11px;
+    }
+
+    .contact-content .contact-info i {
+        margin-right: 1px;
+    }
+
+    .item .btn-primary {
+        padding: 7px 9px 10px 10px;
+    }
+
+    #footer {
+        font-size: 6px;
     }
 }
