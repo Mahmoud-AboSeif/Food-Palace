@@ -21,16 +21,37 @@
         <!-- header start -->
         <header>
             <div class="navbar">
-                <img src="./photos-prj/header-photos/logo.jpg" alt="logo">
-                <nav>
-                    <ul>
+                <nav id="home">
+                    <ul class="sidebar">
+                        <li onclick=hidesidebar()><a class="close" href="#"><i class="fa-solid fa-xmark"></i></a></li>
                         <li><a href="#home">home</a></li>
                         <li><a href="#about">about</a></li>
                         <li><a href="#menu">menu</a></li>
                         <li><a href="#gallery">gallery</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
+                    <ul>
+                        <li><img src="./photos-prj/header-photos/logo.jpg" alt="logo"></li>
+                        <li class="hideOnMobile"><a href="#home">home</a></li>
+                        <li class="hideOnMobile"><a href="#about">about</a></li>
+                        <li class="hideOnMobile"><a href="#menu">menu</a></li>
+                        <li class="hideOnMobile"><a href="#gallery">gallery</a></li>
+                        <li class="hideOnMobile"><a href="#contact">contact</a></li>
+                        <li class="menu-btn" onclick=showsidebar()><a class="non" href="#"><i
+                                    class="fa-solid fa-bars"></i></a></li>
+                    </ul>
                 </nav>
+                <script>
+                    function showsidebar() {
+                        const sidabar = document.querySelector('.sidebar')
+                        sidabar.style.display = 'flex'
+                    }
+                    function hidesidebar() {
+                        const sidabar = document.querySelector('.sidebar')
+                        event.preventDefault();
+                        sidabar.style.display = 'none'
+                    }
+                </script>
             </div>
             <div class="header-contant">
                 <h1>welcome to <span class=" primary-text">food palace</span> restaurant </h1>
